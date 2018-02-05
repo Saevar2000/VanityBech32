@@ -17,7 +17,7 @@ namespace VanityBech32
             Console.ReadLine();
         }
 
-        public void VanityGen()
+        void VanityGen()
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
