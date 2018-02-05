@@ -10,8 +10,6 @@ namespace VanityBech32
 {
     class Program
     {
-        int i = 0;
-
         static void Main(string[] args)
         {
             var p = new Program();
@@ -27,6 +25,8 @@ namespace VanityBech32
             string search = "bc1qsae"; 
             Key privateKey;
             BitcoinWitPubKeyAddress Bech32;
+
+            int i = 0;
 
             while (true)
             {
