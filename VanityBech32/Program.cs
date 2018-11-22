@@ -12,7 +12,7 @@ namespace VanityBech32
     {
         static void Main(string[] args)
         {
-            int numOfThreads = 8;
+            int numOfThreads = 6;
 
             for (int i = 0; i < numOfThreads; i++)
             {
