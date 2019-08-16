@@ -1,9 +1,5 @@
-﻿using NBitcoin;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System;
+using NBitcoin;
 
 namespace VanityBech32
 {
@@ -19,7 +15,7 @@ namespace VanityBech32
                 privateKey = new Key(); // Generate a random private key.
                 Bech32 = privateKey.PubKey.GetSegwitAddress(Network.Main);
 
-                if (Bech32.ToString().Contains("bc1qsae"))
+                if (Bech32.ToString().Contains("bc1qsaevar"))
                 {
                     Console.WriteLine($"{privateKey.GetWif(Network.Main)} : { Bech32}");
                 }
